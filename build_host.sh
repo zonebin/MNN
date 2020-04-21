@@ -14,6 +14,8 @@ if [ ! -d $build_path ]; then
         mkdir -p $build_path
 fi
 
+./schema/generate.sh
+
 cd $build_path
 pwd
 cmake   -DCMAKE_BUILD_TYPE=Debug  \
